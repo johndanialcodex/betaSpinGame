@@ -14,6 +14,7 @@
 		003AD8202B69FD42007B95C6 /* betaSpinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003AD81F2B69FD42007B95C6 /* betaSpinTests.swift */; };
 		003AD82A2B69FD42007B95C6 /* betaSpinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003AD8292B69FD42007B95C6 /* betaSpinUITests.swift */; };
 		003AD82C2B69FD42007B95C6 /* betaSpinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003AD82B2B69FD42007B95C6 /* betaSpinUITestsLaunchTests.swift */; };
+		00B9032B2B6BDEA1005E19F4 /* SwiftUIViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9032A2B6BDEA1005E19F4 /* SwiftUIViewOne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		003AD8252B69FD42007B95C6 /* betaSpinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = betaSpinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		003AD8292B69FD42007B95C6 /* betaSpinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betaSpinUITests.swift; sourceTree = "<group>"; };
 		003AD82B2B69FD42007B95C6 /* betaSpinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betaSpinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		003AD8382B6AB340007B95C6 /* betaSpin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = betaSpin.entitlements; sourceTree = "<group>"; };
+		00B9032A2B6BDEA1005E19F4 /* SwiftUIViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +97,10 @@
 		003AD80D2B69FD41007B95C6 /* betaSpin */ = {
 			isa = PBXGroup;
 			children = (
+				003AD8382B6AB340007B95C6 /* betaSpin.entitlements */,
 				003AD80E2B69FD41007B95C6 /* betaSpinApp.swift */,
 				003AD8102B69FD41007B95C6 /* ContentView.swift */,
+				00B9032A2B6BDEA1005E19F4 /* SwiftUIViewOne.swift */,
 				003AD8122B69FD42007B95C6 /* Assets.xcassets */,
 				003AD8142B69FD42007B95C6 /* Preview Content */,
 			);
@@ -259,6 +264,7 @@
 			files = (
 				003AD8112B69FD41007B95C6 /* ContentView.swift in Sources */,
 				003AD80F2B69FD41007B95C6 /* betaSpinApp.swift in Sources */,
+				00B9032B2B6BDEA1005E19F4 /* SwiftUIViewOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = betaSpin/betaSpin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"betaSpin/Preview Content\"";
@@ -448,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = betaSpin/betaSpin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"betaSpin/Preview Content\"";
