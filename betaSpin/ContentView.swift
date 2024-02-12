@@ -109,70 +109,11 @@ struct ContentView: View {
                     .padding()
                     .padding()
                     .padding()
+                    
                     HStack {
-                        
                         Spacer()
-                        Gauge(value: blueScore, in: 0...25) {
-                            Text("Speed")
-                                .foregroundColor(.blue)
-                        } currentValueLabel: {
-                            Text("\(Int(blueScore))")
-                                .foregroundColor(.blue)
-                        }
-                    minimumValueLabel: {
-                        Text("0")
-                            .foregroundColor(.blue)
-                    } maximumValueLabel: {
-                        Text("100")
-                            .foregroundColor(.blue)
-                    }
-                    .gaugeStyle(.accessoryCircularCapacity)
-                    .tint(.blue)
-                    .scaleEffect(1.6)
-                        
-                        
-                        Spacer()
-                        
-                        
-                        Gauge(value: yellowScore, in: 0...50) {
-                            Text("Speed")
-                            
-                        } currentValueLabel: {
-                            Text("\(Int(yellowScore))")
-                                .foregroundColor(.yellow)
-                        }
-                    minimumValueLabel: {
-                        Text("0")
-                            .foregroundColor(.yellow)
-                    } maximumValueLabel: {
-                        Text("500")
-                            .foregroundColor(.yellow)
-                    }
-                    .gaugeStyle(.accessoryCircularCapacity)
-                    .tint(.yellow)
-                    .scaleEffect(1.6)
-                        
-                        
-                        Spacer()
-                        Gauge(value: redSocre, in: 0...75) {
-                            Text("Speed")
-                            
-                        } currentValueLabel: {
-                            Text("\(Int(redSocre))")
-                                .foregroundColor(.red)
-                        }
-                    minimumValueLabel: {
-                        Text("0")
-                            .foregroundColor(.red)
-                    } maximumValueLabel: {
-                        Text("500")
-                            .foregroundColor(.red)
-                    }
-                    .gaugeStyle(.accessoryCircularCapacity)
-                    .tint(.red)
-                    .scaleEffect(1.6)
-                        Spacer()
-                        
+                            .frame(width: 50)
+                        GaugeRow(blueScore: $blueScore, yellowScore: $yellowScore, redScore: $redSocre)
                     }
                 }
             Spacer()
@@ -331,7 +272,7 @@ struct ContentView: View {
                     blueScore = 0.0
                     
                 rotation1 = 0.0
-                rotation2 = 0.0
+                rotation2  = 0.0
                 rotation3 = 0.0
                     
                 } label: {
